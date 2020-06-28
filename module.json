@@ -2,7 +2,7 @@
   "name": "wfrp4e-deadly-dispatch",
   "title": "Ubersreik Adventures: Deadly Dispatch (WFRP 4e)",
   "description": "A WFRP 4e scenario from the Ubersreik Adventures series.",
-  "version": "0.2",
+  "version": "0.2.1",
   "author": "Stu",
   "systems": ["wfrp4e"],
   "styles": [
