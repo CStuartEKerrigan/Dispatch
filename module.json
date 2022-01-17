@@ -7,6 +7,17 @@
   "compatibleCoreVersion": "9",  
   "author": "Stu",
   "dependencies": [
+  {
+	"name": "betterroofs"
+  },
+  {
+	"name": "wall-height"
+  }, 
+  {
+	"name": "levels"
+  }
+	
+  
   ],  
   "esmodules": [
     ],
