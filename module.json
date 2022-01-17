@@ -1,25 +1,39 @@
 {
   "name": "wfrp4e-deadly-dispatch",
-  "title": "Ubersreik Adventures: Deadly Dispatch (WFRP 4e)",
-  "description": "A WFRP 4e scenario from the Ubersreik Adventures series.",
-  "version": "0.2.1",
+  "title": "Maps for Ubersreik Adventures: Deadly Dispatch (WFRP 4e)",
+  "description": "A Complete Multilevel Map for Ubersreik Grail Chapel",
+  "version": "1.0",
+  "minimumCoreVersion" : "0.9.0",
+  "compatibleCoreVersion": "9",  
   "author": "Stu",
+  "dependencies": [
+  ],  
+  "esmodules": [
+    ],
+  "scripts": [ ],  
   "systems": ["wfrp4e"],
   "styles": [
     "./styles.css"
   ],
   "packs": [
     {
-      "name": "DispatchActors",
       "label": "Deadly Dispatch Actors",
-      "path": "packs/deadly-dispatch-actors.db",
-      "entity": "Actor",
-      "module": "wfrp4e-deadly-dispatch",
-      "system": "wfrp4e"
-    }
+      "type": "Actor",
+	  "name": "DispatchActors",	  
+	  "path": "./packs/deadly-dispatch-actors.db",
+	  "package": "wfrp4e-deadly-dispatch"                                  
+    },
+	{
+      "label": "Deadly Dispatch Scene",
+      "type": "Scene",
+	  "name": "DispatchScene",
+      "path": "./packs/deadly-dispatch-scene.db",
+	  "package": "wfrp4e-deadly-dispatch"
+	}
+	
+	
   ],
-  "languages": ["en"],
+  "url": "https://github.com/CStuartEKerrigan/WFRP-Deadly-Dispatch-4e-FVTT/",
   "manifest": "https://raw.githubusercontent.com/CStuartEKerrigan/WFRP-Deadly-Dispatch-4e-FVTT/master/module.json",
-  "download": "https://github.com/CStuartEKerrigan/WFRP-Deadly-Dispatch-4e-FVTT/archive/master.zip",
-  "url": "https://github.com/CStuartEKerrigan/WFRP-Deadly-Dispatch-4e-FVTT/"
+  "download": "https://github.com/CStuartEKerrigan/WFRP-Deadly-Dispatch-4e-FVTT/archive/master.zip"
 } 
