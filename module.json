@@ -1,6 +1,6 @@
 {
-  "name": "wfrp4e-deadly-dispatch",
-  "title": "Maps for Ubersreik Adventures: Deadly Dispatch (WFRP 4e)",
+  "name": "wfrp4e-grail-chapel",
+  "title": "Warhammer Fantasy Roleplay: Ubersreik Grail Chapel",
   "description": "A Complete Multilevel Map for Ubersreik Grail Chapel",
   "version": "1.0",
   "minimumCoreVersion" : "0.9.0",
@@ -22,29 +22,32 @@
   ],  
   "esmodules": [
     ],
-  "scripts": [ ],  
+  "scripts": [     
+	"initialization.js"
+   ],  
   "systems": ["wfrp4e"],
   "styles": [
     "./styles.css"
   ],
   "packs": [
     {
-      "label": "Deadly Dispatch Actors",
+      "label": "Ubersreik Grail Chapel Actors",
       "type": "Actor",
-	  "name": "DispatchActors",	  
-	  "path": "./packs/deadly-dispatch-actors.db",
-	  "package": "wfrp4e-deadly-dispatch"                                  
+	  "name": "GrailActors",	  
+	  "path": "./packs/grail-chapel-actors.db",
+	  "package": "wfrp4e-grail-chapel"
     },
 	{
-      "label": "Deadly Dispatch Scene",
+      "label": "Ubersreik Grail Chapel Scene",
       "type": "Scene",
-	  "name": "DispatchScene",
-      "path": "./packs/deadly-dispatch-scene.db",
-	  "package": "wfrp4e-deadly-dispatch"
-	}
-	
-	
+	  "name": "GrailScenes",
+      "path": "./packs/grail-chapel-scene.db",
+	  "package": "wfrp4e-grail-chapel"
+	}	
   ],
+  "flags" : {
+	"initializationPacks" : [ "wfrp4e-grail-chapel.GrailActors", "wfrp4e-grail-chapel.GrailScenes"]
+  },
   "url": "https://github.com/CStuartEKerrigan/WFRP-Deadly-Dispatch-4e-FVTT/",
   "manifest": "https://raw.githubusercontent.com/CStuartEKerrigan/WFRP-Deadly-Dispatch-4e-FVTT/master/module.json",
   "download": "https://github.com/CStuartEKerrigan/WFRP-Deadly-Dispatch-4e-FVTT/archive/master.zip"
